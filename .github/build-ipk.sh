@@ -91,4 +91,4 @@ chmod 0755 "$TEMP_DIR/ipkg-build"
 "$TEMP_DIR/ipkg-build" -m "" "$TEMP_PKG_DIR" "$TEMP_DIR"
 
 mv "$TEMP_DIR/${PKG_NAME}_${PKG_VERSION}_all.ipk" "$BASE_DIR/${PKG_NAME}_${PKG_VERSION}_all.ipk"
-rm -rf "$TEMP_DIR"
+#rm -rf "$TEMP_DIR"
