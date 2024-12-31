@@ -91,5 +91,5 @@ chmod 0755 "$TEMP_DIR/ipkg-build"
 "$TEMP_DIR/ipkg-build" -m "" "$TEMP_PKG_DIR" "$TEMP_DIR"
 
 mv "$TEMP_DIR/${PKG_NAME}_${PKG_VERSION}_all.ipk" "$BASE_DIR/${PKG_NAME}_${PKG_VERSION}_all.ipk"
-cp "$TEMP_DIR/${PKG_NAME}_${PKG_VERSION}_all.ipk" .github/
+cp "$BASE_DIR/${PKG_NAME}_${PKG_VERSION}_all.ipk" .github/
 rm -rf "$TEMP_DIR"
