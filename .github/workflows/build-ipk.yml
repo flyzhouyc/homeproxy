@@ -46,6 +46,9 @@ jobs:
           pushd .github
           fakeroot bash build-ipk.sh
           echo "ASSET_NAME=$(ls *.ipk)" >> $GITHUB_ENV
+          pushd .github
+          fakeroot bash build-ipk.sh
+          ls -al
           popd
 
       - name: Publishing to GitHub Artifacts
